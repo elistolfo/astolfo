@@ -20,6 +20,11 @@
         text-align: center;
       }
 
+      #astolfo-img {
+        display: none;
+        margin-top: 20px;
+      }
+
       button {
         padding: 10px 20px;
         background-color: white;
@@ -36,6 +41,14 @@
     <h1>Astolfo is cute</h1>
     <h2>and you're not</h2>
     <p>Welcome to my website dedicated to the cuteness of Astolfo!</p>
-    <button onclick="location.href='astolfo.html'">View Astolfo</button>
+    <button onclick="showAstolfo()">View Astolfo</button>
+    <img id="astolfo-img" src="https://i.imgur.com/Z06S63k.jpg" alt="Astolfo">
+    
+    <script>
+      function showAstolfo() {
+        var img = document.getElementById("astolfo-img");
+        img.style.display = "block";
+      }
+    </script>
   </body>
 </html>
