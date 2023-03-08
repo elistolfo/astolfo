@@ -21,19 +21,10 @@
       }
 
       #astolfo-img {
-        display: none;
+        display: block;
         margin-top: 20px;
-      }
-
-      button {
-        padding: 10px 20px;
-        background-color: white;
-        color: pink;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
       }
 
       .star {
@@ -59,11 +50,10 @@
     </style>
   </head>
   <body>
+    <img id="astolfo-img" src="https://vignette.wikia.nocookie.net/fategrandorder/images/c/c4/Astolfo_4.png" alt="Astolfo">
     <h1>Astolfo is cute</h1>
     <h2>and you're not</h2>
     <p>Welcome to my website dedicated to the cuteness of Astolfo!</p>
-    <button onclick="showAstolfo()">View Astolfo</button>
-    <img id="astolfo-img" src="https://i.imgur.com/Z06S63k.jpg" alt="Astolfo">
     
     <!-- Add stars to the background -->
     <div class="stars-container">
@@ -71,12 +61,5 @@
       <span class="star"></span>
       <!-- Add more stars as needed -->
     </div>
-    
-    <script>
-      function showAstolfo() {
-        var img = document.getElementById("astolfo-img");
-        img.style.display = "block";
-      }
-    </script>
   </body>
 </html>
